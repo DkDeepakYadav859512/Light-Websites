@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(51, 49, 45);
+    background-image: url(./img2.jpg);
+    /* background-repeat: no-repeat;
+    background-position: center;*/
+    background-size: cover; 
+}
+main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+:root{
+    --x: 400px;
+    --y: 400px;
+}
+#light {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    background: radial-gradient(
+        200px at var(--x) var(--y),
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0.966)
+    );
+}
+#Landing{
+    height: 100vh;
+    width: 100vw;
+    
+        
+}
+
+nav{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+}
+nav a{
+
+}
+
+#btnnav button{
+    padding: 0.10rem 0.25rem;
+    border-radius: 2rem;
+    /* border: none; */
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
